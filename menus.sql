@@ -16,3 +16,6 @@ create table menus
    primary key (id)
 );
 
+
+alter table menus add constraint FK_reference_177 foreign key (pai_id)
+      references menus (id);
